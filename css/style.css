@@ -1,0 +1,234 @@
+html, body, div, span, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, address,
+del, em, img, small, strong, b, u, i, hr,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+button,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  word-wrap: break-word; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: inherit;
+  font-weight: inherit;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figure, footer, header, menu, nav, section, summary {
+  display: block; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Grand Hotel', cursive;
+  font-weight: normal;
+  margin: 0px;
+  background: none;
+  line-height: 1.6em; }
+
+.row::after {
+  content: '';
+  clear: both;
+  display: block; }
+
+[class*="col-"] {
+  float: left;
+  margin-right: 2.6%; }
+
+[class*="col-"]:first-child {
+  margin-left: 0px; }
+
+[class*="col-"]:last-child {
+  margin-right: 0px; }
+
+.col-1 {
+  width: 5.95%; }
+
+.col-2 {
+  width: 14.5%; }
+
+.col-3 {
+  width: 23.05%; }
+
+.col-4 {
+  width: 31.6%; }
+
+.col-5 {
+  width: 40.15%; }
+
+.col-6 {
+  width: 48.7%; }
+
+.col-7 {
+  width: 57.25%; }
+
+.col-8 {
+  width: 65.8%; }
+
+.col-9 {
+  width: 74.35%; }
+
+.col-10 {
+  width: 82.9%; }
+
+.col-11 {
+  width: 91.45%; }
+
+.col-12 {
+  width: 100%; }
+
+.btn {
+  padding-top: 30px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 20px 60px;
+  line-height: 24px;
+  letter-spacing: 0;
+  border: 2px solid #ffee95; }
+  .btn.btn-white {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase; }
+
+.font-robo-condensed {
+  font-family: 'Roboto Condensed', sans-serif; }
+
+.img {
+  max-width: 100%;
+  width: 100%; }
+
+.font-size-12 {
+  font-size: 12px; }
+
+.font-size-13 {
+  font-size: 13px; }
+
+.font-size-14 {
+  font-size: 14px; }
+
+.font-size-16 {
+  font-size: 16px; }
+
+.font-size-18 {
+  font-size: 18px; }
+
+.font-size-20 {
+  font-size: 20px; }
+
+.font-size-22 {
+  font-size: 22px; }
+
+.font-size-24 {
+  font-size: 24px; }
+
+.font-size-27 {
+  font-size: 27px; }
+
+.font-size-48 {
+  font-size: 48px; }
+
+.font-size-52 {
+  font-size: 52px; }
+
+.text-uppercase {
+  text-transform: uppercase; }
+
+.align-left {
+  text-align: left; }
+
+.align-right {
+  text-align: right; }
+
+.align-center {
+  text-align: center; }
+
+.top-header .menu-main {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto; }
+
+.top-header {
+  background: #f03078;
+  background: url(../images/bg/girl.png) no-repeat;
+  height: 830px;
+  background-size: cover; }
+  .top-header .logo {
+    padding: 30px 0 30px; }
+  .top-header .menu-main {
+    padding: 44px 0 30px; }
+    .top-header .menu-main .menu-main-item {
+      padding: 0 10px;
+      display: inline-block; }
+      .top-header .menu-main .menu-main-item .menu-main-item-a {
+        color: #ffffff;
+        text-decoration: none;
+        line-height: 2;
+        cursor: pointer; }
+  .top-header .language {
+    padding: 44px 0 30px;
+    color: #ffffff; }
+    .top-header .language .language-a {
+      color: #ffffff; }
+  .top-header .compact {
+    position: relative; }
+    .top-header .compact .col-l {
+      position: absolute;
+      left: 0;
+      text-align: left;
+      color: #ffffff; }
+      .top-header .compact .col-l .title-service {
+        color: #ffee95;
+        padding-bottom: 30px; }
+    .top-header .compact .col-r {
+      position: absolute;
+      right: 0;
+      color: #ffffff; }
+      .top-header .compact .col-r .border-box {
+        border: 2px solid #ffee95;
+        display: inline-block;
+        width: 200px;
+        height: 120px;
+        padding-top: 40px;
+        text-align: center;
+        margin-left: 400px; }
+
+/*# sourceMappingURL=style.css.map */
