@@ -196,6 +196,10 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 1240px;
   margin: 0 auto; }
 
+.container-email {
+  max-width: 880px;
+  margin: 0 auto; }
+
 .top-header {
   background: #f03078;
   background: url(../images/bg/girl.png) no-repeat;
