@@ -151,5 +151,16 @@
     .desc-address {
       color: map-get($color, white);
     }
+    .fas {
+      @include border-radius(50%);
+      width: 25px;
+      background: transparent;
+      color: map-get($color, white);
+      height: 25px;
+      line-height: 25px;
+      text-align: center;
+      margin: 0 2px;
+      border: 1px solid map-get($color, white);
+    }
   }
 }

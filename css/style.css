@@ -347,5 +347,18 @@ h1, h2, h3, h4, h5, h6 {
       padding-bottom: 30px; }
     .contact .address .desc-address {
       color: #ffffff; }
+    .contact .address .fas {
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%;
+      width: 25px;
+      background: transparent;
+      color: #ffffff;
+      height: 25px;
+      line-height: 25px;
+      text-align: center;
+      margin: 0 2px;
+      border: 1px solid #ffffff; }
 
 /*# sourceMappingURL=style.css.map */
