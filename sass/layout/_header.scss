@@ -1,0 +1,67 @@
+.top-header {
+  background: map-get($color, red);
+  background: url(../images/bg/girl.png) no-repeat;
+  height: 830px;
+  background-size: cover;
+  .header-menu {
+    border-bottom: 1px solid map-get($color, pinks);
+    height: 90px;
+    margin-bottom: 60px;
+    .logo {
+      padding: 20px 0 30px;
+    }
+    .menu-main {
+      @extend %no-mr-pd;
+      padding: 44px 0 30px;
+      .menu-main-item {
+        padding: 0 10px;
+        display: inline-block;
+        .menu-main-item-a {
+          color: map-get($color, white);
+          text-decoration: none;
+          line-height: 2;
+          cursor: pointer;
+          &:hover {
+            @include transition(all .3s linear);
+            border-bottom: 3px solid map-get($color, white);
+            padding-bottom: 22px;
+          }
+        }
+      }
+    }
+    .language {
+      padding: 44px 0 30px;
+      color: map-get($color, white);
+      .language-a {
+        color: map-get($color, white);
+      }
+    }
+  }
+  .compact {
+    position: relative;
+    .col-l {
+      position: absolute;
+      left: 0;
+      text-align: left;
+      color: map-get($color, white);
+      .title-service  {
+         color: map-get($color, yellow);
+         padding-bottom: 30px;
+       }
+    }
+    .col-r {
+      position: absolute;
+      right: 0;
+      color: map-get($color, white);
+      .border-box {
+        border: 2px solid map-get($color, yellow);
+        display: inline-block;
+        width: 200px;
+        height: 120px;
+        padding-top: 40px;
+        text-align: center;
+        margin-left: 400px;
+      }
+    }
+  }
+}
