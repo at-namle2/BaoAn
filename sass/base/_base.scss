@@ -11,11 +11,16 @@ body {
   line-height: 20px;
 }
 h1, h2 , h3, h4, h5, h6 {
-  font-family: 'Grand Hotel', cursive;
+  font-family: 'font-myriad-pro';
   font-weight: normal;
   margin: 0px;
   background: none;
   line-height: 1.6em;
+  letter-spacing: 1px;
+}
+@font-face {
+  font-family: "myriad-pro";
+  src: url(../font/MyriadPro-Regular.otf);
 }
 .row::after {
   content: '';
@@ -68,10 +73,15 @@ h1, h2 , h3, h4, h5, h6 {
     color: map-get($color, white);
     border: 2px solid map-get($color, white);
     margin: 0 10px;
+    &:hover {
+      @include transition(all .5s linear);
+      background: map-get($color, white);
+      color: map-get($color, black);
+    }
   }
 }
-.font-robo-condensed {
-  font-family: 'Roboto Condensed', sans-serif;
+.font-myriad-pro {
+  font-family: "myriad-pro";
 }
 .img {
   max-width: 100%;

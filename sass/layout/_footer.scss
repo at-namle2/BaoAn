@@ -33,6 +33,11 @@
       text-align: center;
       margin: 0 2px;
       border: 1px solid map-get($color, white);
+      &:hover {
+        @include transition(all .5s linear);
+        background: map-get($color, white);
+        color: map-get($color, black);
+      }
     }
   }
 }

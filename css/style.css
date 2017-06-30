@@ -53,12 +53,16 @@ body {
   line-height: 20px; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Grand Hotel', cursive;
+  font-family: 'font-myriad-pro';
   font-weight: normal;
   margin: 0px;
   background: none;
-  line-height: 1.6em; }
+  line-height: 1.6em;
+  letter-spacing: 1px; }
 
+@font-face {
+  font-family: "myriad-pro";
+  src: url(../font/MyriadPro-Regular.otf); }
 .row::after {
   content: '';
   clear: both;
@@ -144,9 +148,16 @@ h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
     border: 2px solid #ffffff;
     margin: 0 10px; }
+    .btn.btn-input:hover {
+      -webkit-transition: all 0.5s linear;
+      -moz-transition: all 0.5s linear;
+      -o-transition: all 0.5s linear;
+      transition: all 0.5s linear;
+      background: #ffffff;
+      color: #000000; }
 
-.font-robo-condensed {
-  font-family: 'Roboto Condensed', sans-serif; }
+.font-myriad-pro {
+  font-family: "myriad-pro"; }
 
 .img {
   max-width: 100%;
@@ -307,6 +318,13 @@ h1, h2, h3, h4, h5, h6 {
       text-align: center;
       margin: 0 2px;
       border: 1px solid #ffffff; }
+      .contact .address .fas:hover {
+        -webkit-transition: all 0.5s linear;
+        -moz-transition: all 0.5s linear;
+        -o-transition: all 0.5s linear;
+        transition: all 0.5s linear;
+        background: #ffffff;
+        color: #000000; }
 
 .email {
   padding: 50px 0 20px; }
@@ -420,23 +438,34 @@ h1, h2, h3, h4, h5, h6 {
   height: 230px; }
   .author .author-inline {
     padding: 50px 0 0 0; }
+    .author .author-inline .img-author {
+      border-radius: 50%;
+      transition: transform 2.5s ease-in-out; }
+      .author .author-inline .img-author:hover {
+        transform: rotate(360deg); }
     .author .author-inline .author-blockter {
       display: inline-block;
       vertical-align: top;
       padding: 10px 10px;
       line-height: 26px;
-      color: #ffffff;
       position: relative; }
       .author .author-inline .author-blockter:after {
         position: absolute;
         right: 0;
         content: url(../images/icon/pay.png); }
+      .author .author-inline .author-blockter .title-cv, .author .author-inline .author-blockter .phone {
+        color: #ffffff;
+        font-weight: 700; }
+      .author .author-inline .author-blockter .desc-spa {
+        color: #fce0e8; }
 
 .picture-gallery .title-picture {
   padding: 52px 0 52px; }
 .picture-gallery .box-picture .box-picture-item {
   float: left;
   margin-top: -5px; }
+  .picture-gallery .box-picture .box-picture-item .img-box:hover {
+    opacity: 0.5; }
 
 .news {
   background: url(../images/bg/news.png) no-repeat;

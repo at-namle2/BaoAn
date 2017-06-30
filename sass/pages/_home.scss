@@ -112,17 +112,30 @@
   height: 230px;
   .author-inline {
     padding: 50px 0 0 0;
+    .img-author {
+      border-radius: 50%;
+      transition: transform 2.5s ease-in-out;
+      &:hover {
+        transform: rotate(360deg);
+      }
+    }
     .author-blockter {
       display: inline-block;
       vertical-align: top;
       padding: 10px 10px;
       line-height: 26px;
-      color: map-get($color, white);
       position: relative;
       &:after {
         position: absolute;
         right: 0;
         content: url(../images/icon/pay.png);
+      }
+      .title-cv, .phone {
+        color: map-get($color, white);
+        font-weight: 700;
+      }
+      .desc-spa {
+        color: map-get($color, pinks-2);
       }
     }
   }
@@ -137,6 +150,11 @@
     .box-picture-item {
       float: left;
       margin-top: -5px;
+      .img-box {
+        &:hover {
+          opacity: 0.5;
+        }
+      }
     }
   }
 }
