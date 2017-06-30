@@ -487,5 +487,48 @@ h1, h2, h3, h4, h5, h6 {
       color: #4a4a4a; }
     .news .box-news .box-news-item .desc-news {
       color: #656565; }
+    .news .box-news .box-news-item .hover-effect {
+      position: relative; }
+      .news .box-news .box-news-item .hover-effect:before {
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+        transition: all 0.3s linear;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -o-border-radius: 5px;
+        border-radius: 5px;
+        position: absolute;
+        background: rgba(255, 255, 255, 0.15);
+        content: '';
+        height: 0;
+        width: 0;
+        left: 0;
+        margin: auto;
+        bottom: 0;
+        border-radius: 5px; }
+      .news .box-news .box-news-item .hover-effect:after {
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+        transition: all 0.3s linear;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -o-border-radius: 5px;
+        border-radius: 5px;
+        position: absolute;
+        background: rgba(255, 255, 255, 0.15);
+        content: '';
+        right: 0;
+        width: 0;
+        height: 0;
+        margin: auto;
+        top: 0; }
+    .news .box-news .box-news-item:hover .hover-effect:before {
+      width: 100%;
+      height: 100%; }
+    .news .box-news .box-news-item:hover .hover-effect:after {
+      width: 100%;
+      height: 100%; }
 
 /*# sourceMappingURL=style.css.map */
