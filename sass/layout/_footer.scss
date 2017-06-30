@@ -1,0 +1,71 @@
+// **contact**//
+.contact {
+  background: url(../images/bg/contact.png) no-repeat;
+  background-size: cover;
+  .title-contact {
+    color: map-get($color, white);
+    padding: 60px 0 60px;
+  }
+  .address {
+    border-top: 1px solid map-get($color, pinks);
+    padding: 40px 0 60px;
+    border-bottom: 1px solid map-get($color, pinks);
+    &.add {
+      padding-bottom: 40px;
+    }
+    &.add2 {
+      padding-bottom: 53px;
+    }
+    .title-address  {
+      color: map-get($color, white);
+      padding-bottom: 30px;
+    }
+    .desc-address {
+      color: map-get($color, white);
+    }
+    .fas {
+      @include border-radius(50%);
+      width: 25px;
+      background: transparent;
+      color: map-get($color, white);
+      height: 25px;
+      line-height: 25px;
+      text-align: center;
+      margin: 0 2px;
+      border: 1px solid map-get($color, white);
+    }
+  }
+}
+.email {
+  padding: 50px 0 20px;
+  .neme {
+    color: map-get($color, white);
+  }
+  .input {
+    width: 90%;
+    height: 40px;
+    margin-bottom: 20px;
+    background: transparent;
+    border: 1px solid map-get($color, pinks);
+    outline: none;
+    padding: 0 20px;
+    color:  map-get($color, white);
+  }
+  .phone-sdt {
+    width: 95%;
+    height: 110px;
+    background: transparent;
+    border: 1px solid map-get($color, pinks);
+    outline: none;
+    padding: 0 20px;
+    color:  map-get($color, white);
+  }
+}
+.copyright {
+  border-top: 1px solid map-get($color, pinks);
+  margin-top: 20px;
+  padding: 20px 0 20px;
+  .copy {
+    color:  map-get($color, white);
+  }
+}
